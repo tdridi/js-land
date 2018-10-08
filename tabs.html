@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+    <script type="text/javascript" src="js/core.js" async></script>
+    <script type="text/javascript" src="js/tabs.js" async></script>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/tabs.css"/>
+
+    <style>
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            display: inline-flex;
+            background-color: #e0e0e0;
+            margin: 1em 1.5em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav core-include-html="menu.html"></nav>
+    <div>
+        <ul class="tabs">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a class="rakoon" href="#mentions">Mentions</a></li>
+            <li><a class="rakoon" href="#about">About</a></li>
+            <li><a class="rakoon" href="#features">Features</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tab-content active" id="home">Home : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="tab-content" id="mentions">Mentions : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolo</div>
+            <div class="tab-content" id="about">About : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="tab-content" id="features">Features : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolo</div>
+        </div>
+        <div id="selfie"></div>
+    </div>
+    <footer></footer>
+
+</body>
+
+</html>
