@@ -3,11 +3,15 @@
 
     <head>
         <meta charset="utf-8">
+        <script type="text/javascript" src="js/core.js" async></script>
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dom.css">
     </head>
 
     <body>
-    Premier exemple : comparaison entre <code>event.target</code> et <code>this</code>
+        <header></header>
+        <nav core-include-html="menu.html"></nav>
+        <p>Premier exemple : comparaison entre <code>event.target</code> et <code>this</code></p>
         <div class="bubbling">
             <form id="form">FORM
                 <div>DIV
@@ -16,8 +20,20 @@
             </form>
         </div>
         <div id="demoText"></div>
+        <p>Deuxiemme exemple comparaison entre Bubbling et capturing</p>
         <div id="demoText2"></div>
 
+        <p>Troisiemme exemple comparaison entre container et ces child</p>
+        <div class="homeBound">
+            <div class="bigBoy">
+                I'm a big boy
+                <div class="smallBoy">
+                    I'm a small boy
+                    <p class="tinyBoy">I'm a tiny boy</p>
+                </div>
+            </div>
+        </div>
+        <div id="demoText3"></div>
         <script src="js/bubbling.js"></script>
     </body>
 </html>

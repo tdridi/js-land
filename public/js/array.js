@@ -41,7 +41,7 @@ function myFunction() {
 
     for (var i= 0; i < fruits.length; i++ ){
         console.log(fruits[i]);
-        if ( biggest == undefined || (fruits[i].length < biggest.length)){ biggest = fruits[i]}
+        if ( biggest == undefined || (fruits[i].length > biggest.length)){ biggest = fruits[i]}
     }
     demoDiv.innerHTML = demoDiv.innerHTML + biggest + "<br>";
 }
@@ -90,7 +90,7 @@ function getTheseFruits(fruits){
     for (var i= 0; i< fruits.length; i++){
         base += fruits[i]+ ((i == fruits.length-1) ?  "." :", ");
     }
-    demoDiv.innerHTML = base;
+    //demoDiv.innerHTML = base;
 
 
 }

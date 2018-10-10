@@ -26,3 +26,28 @@
     line-height: 50px;
     margin: 0;
 }
+
+
+.bigBoy{
+    width:100%;
+    height: 300px;
+    background-color: #E7E7E7;
+    text-align: center;
+}
+
+.smallBoy{
+    width:50%;
+    height: 200px;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.tinyBoy{
+    width:25%;
+    height: 100px;
+    background-color: darkolivegreen;
+}
+
+.active {
+    background-color: darkred;
+}

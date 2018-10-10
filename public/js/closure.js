@@ -18,14 +18,15 @@
      * */
     var me = 'Bruce Wayne'
     function returnMe(){
-        return function (me) {
+        return function () {
             console.log('My name is '+ me + '!');
         }
 
     }
-    //var getthat = returnMe()
 
-    console.dir( returnMe())
+    var getThat = returnMe()
+
+    console.dir( getThat(me))
 
     /*
     * Exemple 3  => retourne un i incrementer
@@ -72,15 +73,15 @@
 
         //alert("Good Bye!");
 
-        return function() {
-            alert("Hello!");
+        return function(msg) {
+            alert(msg);
         }
 
     }
 
     var something = youSayGoodBye();
 
-    something();
+    something('Hello !');
 
 
     /*
@@ -88,6 +89,35 @@
      *
      * */
 
+    function stopWatch() {
+        var startTime = Date.now();
+        console.log(startTime);
+
+        function getDelay() {
+            var elapsedTime = Date.now() - startTime;
+            console.log('ElapsedTime : '+elapsedTime);
+        }
+
+        return getDelay;
+    }
+
+    stopWatch()
+
+    var timer = stopWatch()
+
+    for (var i=0; i<1000000; i++){
+        var foo= Math.random() *1000
+        //console.log('Foo : '+foo)
+    }
+
+    timer()
+
+
+    /*
+    * Consolusion : La chose la plus importante que les (Closure) fermetures font est de permettre aux
+    * fonctions de continuer à fonctionner même si leur environnement change ou disparaît radicalement.
+    *
+    * */
 
 
 })()

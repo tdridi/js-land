@@ -40,5 +40,9 @@ app.get('/tabs', function(req, res) {
 app.get('/closure', function(req, res) {
     res.sendFile(path.join(__dirname + '/closure.html'));
 })
+app.get('/bind', function(req, res) {
+    res.sendFile(path.join(__dirname + '/bind.html'));
+})
 
-app.listen(4800);
+
+app.listen(7000);
