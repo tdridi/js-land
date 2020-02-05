@@ -21,12 +21,15 @@ var express = require('express');
 var app = express();
 var path = require('path');
 app.use(express.static(__dirname + '/public'));
-// viewed at http://localhost:8080
+// viewed at http://localhost:7000
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 app.get('/object', function(req, res) {
     res.sendFile(path.join(__dirname + '/object.html'));
+})
+app.get('/arrayFilter', function(req, res) {
+    res.sendFile(path.join(__dirname + '/arrayFilter.html'));
 })
 app.get('/dom', function(req, res)  {
     res.sendFile(path.join(__dirname + '/dom.html'));
